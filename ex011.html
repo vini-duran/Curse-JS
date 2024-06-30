@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Identificador de nacionalidade</h1>
+    Escreva a sigla do seu país <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="nacional()"> 
+    <div id = "res">
+
+    </div>
+
+    <script>
+
+
+        function nacional() {
+            var n = document.querySelector('input#txtnac')
+            var r = document.querySelector('div#res')
+            var ver = String(n.value)
+            ver.innerHTML = `<p>Sua nacionalidade é <strong>${ver}</strong></p>`
+            if (ver == "BR") {
+                ver.innerHTML = `Voce é um cidadão brasileiro`
+            } else {
+                ver.innerHTML = `Voce é um cidadão estrangeiro`
+            }
+        }
+        ver.innerHTML = `Seja sempre bem vindo ao Brasil!`
+    </script>
+</body>
+</html>
