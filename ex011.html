@@ -20,14 +20,16 @@
             var n = document.querySelector('input#txtnac')
             var r = document.querySelector('div#res')
             var ver = String(n.value)
-            ver.innerHTML = `<p>Sua nacionalidade é <strong>${ver}</strong></p>`
-            if (ver == "BR") {
-                ver.innerHTML = `Voce é um cidadão brasileiro`
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${ver}</strong></p>`
+            if (ver == 'BR') {
+                res.innerHTML += `<p>Voce é um cidadão brasileiro</P> `
             } else {
-                ver.innerHTML = `Voce é um cidadão estrangeiro`
+                res.innerHTML += `<p>Voce é um cidadão estrangeiro</p>`
+                
             }
+            res.innerHTML += `Seja sempre bem vindo ao Brasil!`
         }
-        ver.innerHTML = `Seja sempre bem vindo ao Brasil!`
+        
     </script>
 </body>
 </html>
