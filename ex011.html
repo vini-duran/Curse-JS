@@ -14,16 +14,17 @@
         function verificar() {
             var n = document.querySelector('input#pais')
             var r = document.querySelector('div#res')
-
-            var resposta = String(n.value)
-            res.innerHTML = `<p>Sua nacionalidade é <strong>${resposta}</strong></p>`
-            if (resposta == 'BR') {
-                res.innerHTML += `<p>Voce é um cidadão brasileiro</p>`
+            var ver = String(n.value)
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${ver}</strong></p>`
+            if (ver == 'BR') {
+                res.innerHTML += `<p>Voce é um cidadão brasileiro</P> `
             } else {
                 res.innerHTML += `<p>Voce é um cidadão estrangeiro</p>`
+                
             }
-            res.innerHTML = `Seja sempre bem vindo ao <strong>Brasil!</strong>`
+            res.innerHTML += `Seja sempre bem vindo ao Brasil!`
         }
+        
     </script>
 </body>
 </html>
