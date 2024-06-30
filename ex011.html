@@ -17,12 +17,12 @@
 
             var resposta = String(n.value)
             res.innerHTML = `<p>Sua nacionalidade é <strong>${resposta}</strong></p>`
-            if (resposta === "BR") {
-                res.innerHTML += `Voce é um cidadão brasileiro`
+            if (resposta == 'BR') {
+                res.innerHTML += `<p>Voce é um cidadão brasileiro</p>`
             } else {
-                res.innerHTML += `Voce é um cidadão estrangeiro`
+                res.innerHTML += `<p>Voce é um cidadão estrangeiro</p>`
             }
-            res.innerHTML = `Seja sempre bem vindo ao Brasil!`
+            res.innerHTML = `Seja sempre bem vindo ao <strong>Brasil!</strong>`
         }
     </script>
 </body>
